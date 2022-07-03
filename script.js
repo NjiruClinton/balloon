@@ -1,16 +1,13 @@
-
            function grow(){ setInterval(function(){
             balloon = document.querySelector('.balloon');
-            balloon.style.width = '400px';
-            balloon.style.height = '400px';
+            balloon.style.width = '200px';
+            balloon.style.height = '200px';
             balloon.style.transition = '3s';
             //remove balloon
-            setTimeout(function(){
+            setInterval(function(){
                 balloon.style.display = 'none';
-                var myInterval = setInterval(explode(balloon), 1000);
-                setTimeout(() => clearInterval(myInterval), 1000)
-            }
-            ,1000);
+                explode(balloon);
+            },2000);
         }, 2000);
     };
     grow();

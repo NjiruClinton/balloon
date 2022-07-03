@@ -2,7 +2,6 @@
 body {
   margin: 20px;
   background: hsl(70deg, 31%, 85%);
-  text-align: center;
 }
 
 .explosion {
@@ -42,8 +41,8 @@ body {
 }
 .balloon {
   display: inline-block;
-  width: 120px;
-  height: 145px;
+  width: 103px;
+  height: 125px;
   background: hsl(215deg, 50%, 65%);
   border-radius: 80%;
   position: relative;
