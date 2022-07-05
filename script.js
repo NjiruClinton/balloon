@@ -4,14 +4,36 @@ function grow() {
     balloon.style.width = "200px";
     balloon.style.height = "200px";
     balloon.style.transition = "3s";
-
     setTimeout(function () {
       balloon.style.display = "none";
-      explode(balloon);
+    explode(balloon);
+    if(balloon.style.display == "none"){
+      repeatBalloon();
+    }
     }, 2000);
-  }, 2000);
+}, 2000);
+  
+if(explode == true){
+  repeatBalloon();
 }
-grow();
+
+}
+
+for (var i = 0; i < 10; i++) {
+  repeatBalloon();
+}
+
+function repeatBalloon() {
+  setTimeout(function () {
+    balloon = document.querySelector(".balloon");
+    balloon.style.display = "block";
+    balloon.style.width = "100px";
+    balloon.style.height = "100px";
+    if(balloon.style.display == "block"){
+      grow();
+    }
+  }, 4000);
+}
 
 var anchors = document.querySelectorAll(".balloon");
 

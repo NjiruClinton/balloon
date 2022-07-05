@@ -41,8 +41,8 @@ body {
 }
 .balloon {
   display: inline-block;
-  width: 103px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   background: hsl(215deg, 50%, 65%);
   border-radius: 80%;
   position: relative;
